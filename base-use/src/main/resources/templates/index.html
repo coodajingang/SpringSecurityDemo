@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SpringBoot集成thymeleaf</title>
+</head>
+<body>
+<h1>thymeleaf模板引擎</h1>
+<h2> Index Page </h2>
+<form method="get" th:action="@{/doLogout}" >
+    <button type="submit" name="submit">logout</button>
+</form>
+</body>
+</html>
