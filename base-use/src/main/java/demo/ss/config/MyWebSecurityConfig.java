@@ -67,7 +67,7 @@ public class MyWebSecurityConfig {
                         .logoutSuccessHandler((req, res, auth) -> log.info("sSuccessfully logged out:   {}", auth))
                         /*
                         1. logoutSuccessUrl logoutSuccessHandler 是互斥的， 后设置生效，可以认为一个用于不分离，一个用于分离
-                        2。addLogoutHandler 可以增加多个注销后调用的handler，但先于logoutSuccessHandler 调用，见LogoutFilter源码
+                        2. addLogoutHandler 可以增加多个注销后调用的handler，但先于logoutSuccessHandler 调用，见LogoutFilter源码
                          */
                 )
                 .authenticationProvider(new AuthenticationProvider() {
